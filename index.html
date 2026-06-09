@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0376)https://mira.bytedance.com/mira/api/v1/file/d/tos-mya-i-xobrcjvdq7/c058f9912a2d4f998c540562ad839002.html~tplv-xobrcjvdq7-image?sign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzNjE4MDY3IiwidXJpIjoidG9zLW15YS1pLXhvYnJjanZkcTcvYzA1OGY5OTEyYTJkNGY5OThjNTQwNTYyYWQ4MzkwMDIuaHRtbCIsImF1dCI6MCwiaXNzIjoibWlyYSIsImV4cCI6MTc4MTYyNTYwMH0.gco6ZnfL0-HzTvQnlaQ3bEwsZgxGfZDp_YD7sJ1HIcM -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>My Kenya Safari Field Book</title>
@@ -18,7 +18,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .serif{font-family:Georgia,"Times New Roman","Songti SC",serif}
 #app{max-width:480px;margin:0 auto;height:100dvh;position:relative;background:var(--bg);
   display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.1)}
-.screen{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:96px}
+.screen{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:96px;position:relative}
 .screen::-webkit-scrollbar{display:none}
 img{display:block;width:100%;height:100%;object-fit:cover}
 .imgwrap{background:#e5d8c4 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><text x="50%" y="55%" font-size="22" text-anchor="middle">🦒</text></svg>') center/40px no-repeat;overflow:hidden}
@@ -26,32 +26,33 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 /* ---- HERO ---- */
 .hero{position:relative;height:300px;overflow:hidden}
 .hero img{filter:saturate(1.05)}
-.hero-grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.55) 100%)}
-.hero-txt{position:absolute;left:20px;right:20px;bottom:18px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,.6) 100%)}
+.hero-txt{position:absolute;left:20px;right:20px;bottom:42px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.4)}
 .loc{font-size:13px;display:flex;align-items:center;gap:5px;margin-bottom:6px;opacity:.95}
-.hero-title{font-size:40px;line-height:1.05;font-weight:700;letter-spacing:-1px}
+.hero-title{font-size:38px;line-height:1.05;font-weight:700;letter-spacing:-1px}
 .hero-sub{font-size:14px;margin-top:8px;opacity:.95}
 
-/* ---- SEARCH ---- */
-.searchbox{margin:-26px 16px 0;position:relative;z-index:5}
-.searchbox input{width:100%;border:none;background:#fff;border-radius:30px;padding:15px 18px 15px 46px;
+/* ---- STICKY SEARCH ---- */
+.searchbar{position:sticky;top:0;z-index:20;background:var(--bg);padding:10px 16px;
+  box-shadow:0 4px 12px rgba(120,80,40,.06)}
+.searchbar.solid{border-bottom:1px solid var(--line)}
+.searchbox{position:relative}
+.searchbox input{width:100%;border:none;background:#fff;border-radius:30px;padding:14px 18px 14px 46px;
   font-size:15px;box-shadow:var(--shadow);color:var(--ink)}
 .searchbox .ic{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:17px;opacity:.5}
 
 /* ---- SECTION ---- */
-.sec{padding:22px 16px 4px}
+.sec{padding:18px 16px 4px}
 .sec-h{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px}
 .sec-h h2{font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-h .cnt{font-size:13px;color:var(--orange);margin-left:6px;font-weight:500}
-.more{font-size:13px;color:var(--ink2)}
 
 /* region cards */
 .region-card{position:relative;height:118px;border-radius:18px;overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow)}
 .region-card .imgwrap{position:absolute;inset:0}
-.region-card .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,25,12,.75) 0%,rgba(40,25,12,.15) 70%)}
-.region-card .meta{position:absolute;left:18px;bottom:16px;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.5)}
-.region-card .rn{font-size:21px;font-weight:700}
-.region-card .rd{font-size:13px;opacity:.9;margin-top:2px}
+.region-card .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,25,12,.75) 0%,rgba(40,25,12,.12) 70%)}
+.region-card .meta{position:absolute;left:18px;bottom:0;top:0;display:flex;align-items:center;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+.region-card .rn{font-size:23px;font-weight:700}
 .region-card .arrow{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:30px;height:30px;
   background:rgba(255,255,255,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--orange);font-weight:700}
 
@@ -60,7 +61,6 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .chip{padding:8px 15px;border-radius:20px;font-size:13px;background:#fff;color:var(--ink2);
   border:1px solid var(--line);white-space:nowrap;cursor:pointer}
 .chip.on{background:var(--orange);color:#fff;border-color:var(--orange);font-weight:600}
-.sep{width:1px;background:var(--line);margin:2px 2px}
 
 /* animal grid */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -80,7 +80,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .iucn.EN{background:#D9743A}.iucn.CR{background:#C0392B}
 
 /* ---- DETAIL ---- */
-.back{position:absolute;left:16px;top:16px;z-index:10;width:38px;height:38px;border-radius:50%;
+.back{position:absolute;left:16px;top:16px;z-index:30;width:38px;height:38px;border-radius:50%;
   background:rgba(60,44,32,.65);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;backdrop-filter:blur(4px)}
 .dhero{position:relative;height:330px}
 .dhero .imgwrap{position:absolute;inset:0}
@@ -102,21 +102,23 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .kv .v{color:var(--ink);flex:1;line-height:1.5}
 .pill-row{display:flex;gap:9px;flex-wrap:wrap}
 .pill{font-size:13px;padding:8px 14px;border-radius:16px;border:1px solid var(--orange);color:var(--orange);background:#fff;cursor:pointer}
-.star-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.star-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer;align-items:center}
 .star-item:last-child{border:none}
 .star-item .si{width:60px;height:60px;border-radius:12px;flex-shrink:0}
 .star-item .sc{flex:1}
 .star-item .sn{font-size:15px;font-weight:700}
 .star-item .sd{font-size:12.5px;color:var(--ink2);line-height:1.5;margin-top:3px}
+.star-item .sa{color:var(--ink2);font-size:18px}
 .badge{font-size:10px;padding:2px 7px;border-radius:8px;margin-left:6px;font-weight:600;vertical-align:middle}
 .badge.alive{background:#E3F0E4;color:#3F8A4E}.badge.dead{background:#EAE2D7;color:#8A7B68}
 .fact{font-size:13.5px;line-height:1.6;color:var(--ink);padding:6px 0;display:flex;gap:8px}
 .fact::before{content:"•";color:var(--orange);font-weight:700}
 .post{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer}
 .post:last-child{border:none}
-.post .pf{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;flex-shrink:0;font-weight:700}
+.post .pf{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;flex-shrink:0;font-weight:700}
 .pf.xhs{background:#FF2442}.pf.fb{background:#1877F2}.pf.yt{background:#FF0000}.pf.ig{background:#E1306C}.pf.wiki{background:#555}
 .post .pt{flex:1;font-size:13px;line-height:1.4}
+.post .psrc{font-size:11px;color:var(--ink2);margin-top:2px}
 .post .pa{color:var(--ink2);font-size:16px}
 .cta{position:sticky;bottom:0;margin:18px 0 0;background:var(--orange);color:#fff;border:none;width:100%;
   padding:17px;border-radius:16px;font-size:16px;font-weight:700;box-shadow:0 6px 18px rgba(217,122,52,.4);cursor:pointer}
@@ -141,7 +143,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .tl-top .tm{font-size:12.5px;color:var(--ink2);margin-top:4px}
 .tl-desc{font-size:13px;line-height:1.6;color:var(--ink);margin-top:11px}
 .tl-act{display:flex;border-top:1px solid var(--line);margin-top:12px;padding-top:11px}
-.tl-act a{flex:1;text-align:center;font-size:12.5px;color:var(--orange);text-decoration:none;border-right:1px solid var(--line)}
+.tl-act a{flex:1;text-align:center;font-size:12.5px;color:var(--orange);text-decoration:none;border-right:1px solid var(--line);cursor:pointer}
 .tl-act a:last-child{border:none}
 
 /* ---- NEW JOURNAL FORM ---- */
@@ -164,10 +166,6 @@ select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns=
 .two>*{flex:1}
 .txt{resize:none;min-height:96px;line-height:1.6}
 .cnt-r{text-align:right;font-size:12px;color:var(--ink2);margin-top:5px}
-.tags-in{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.tagchip{background:var(--orange);color:#fff;font-size:13px;padding:7px 12px;border-radius:14px;display:flex;gap:6px;align-items:center}
-.tagchip .x{cursor:pointer}
-.tags-in input{flex:1;min-width:110px;border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-size:13px}
 .save{margin:8px 18px;background:var(--orange);color:#fff;border:none;width:calc(100% - 36px);padding:17px;border-radius:14px;font-size:16px;font-weight:700;box-shadow:0 6px 18px rgba(217,122,52,.4)}
 .offline{text-align:center;font-size:12.5px;color:var(--ink2);padding:6px 0 14px}
 
@@ -184,7 +182,6 @@ select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns=
 .j-photos .jp img{border-radius:10px}
 .j-note{font-size:13.5px;line-height:1.65;color:var(--ink)}
 .j-foot{display:flex;align-items:center;margin-top:10px}
-.j-tags{display:flex;gap:8px;font-size:12.5px;color:var(--orange);font-style:italic}
 .j-del{margin-left:auto;font-size:12.5px;color:var(--ink2)}
 .empty{text-align:center;padding:80px 30px;color:var(--ink2)}
 .empty .e1{font-size:46px;margin-bottom:14px}
@@ -197,20 +194,205 @@ select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns=
 .tab .ti{font-size:21px;display:block;margin-bottom:3px;filter:grayscale(1);opacity:.55}
 .tab.on{color:var(--orange);font-weight:600}
 .tab.on .ti{filter:none;opacity:1}
-.fab{width:60px;flex:0 0 60px;position:relative}
+.fab{flex:1;position:relative}
 .fab .btn{position:absolute;top:-22px;left:50%;transform:translateX(-50%);width:58px;height:58px;border-radius:50%;
   background:var(--orange);color:#fff;font-size:32px;display:flex;align-items:center;justify-content:center;
   box-shadow:0 6px 18px rgba(217,122,52,.5);border:4px solid var(--bg);cursor:pointer}
+.fab .lbl{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-size:11px;color:var(--orange);font-weight:600}
 .hide{display:none!important}
 .toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(40,28,18,.92);color:#fff;
   padding:16px 26px;border-radius:14px;font-size:15px;z-index:200;opacity:0;transition:.25s;pointer-events:none}
 .toast.show{opacity:1}
+
+/* ---- POSTS SHEET (二级面板) ---- */
+.sheet-mask{position:absolute;inset:0;background:rgba(30,20,12,.45);z-index:80;display:flex;align-items:flex-end;opacity:0;transition:.22s}
+.sheet-mask.show{opacity:1}
+.sheet{background:var(--bg);width:100%;border-radius:22px 22px 0 0;max-height:78%;overflow-y:auto;
+  transform:translateY(100%);transition:.26s cubic-bezier(.2,.8,.2,1);padding-bottom:24px}
+.sheet-mask.show .sheet{transform:translateY(0)}
+.sheet::-webkit-scrollbar{display:none}
+.sheet-grab{width:40px;height:5px;background:var(--line);border-radius:3px;margin:10px auto 6px}
+.sheet-h{padding:6px 20px 12px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.sheet-h .sh-img{width:46px;height:46px;border-radius:12px;flex-shrink:0}
+.sheet-h .sh-t{font-size:18px;font-weight:700}
+.sheet-h .sh-s{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.sheet-list{padding:6px 20px}
 </style>
 </head>
 <body>
 <div id="app">
-  <div id="root" class="screen"></div>
-  <nav class="tabbar" id="tabbar"></nav>
+  <div id="root" class="screen">
+  <div class="hero">
+    <div class="imgwrap"><img src="./index_files/Kilimanjaro_from_Amboseli.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-txt">
+      <div class="loc">📍 KENYA · 2026.06.21–06.27</div>
+      <div class="hero-title serif">My Kenya<br>Safari Field Book</div>
+      <div class="hero-sub">我的非洲动物图鉴 · 旅行手账</div>
+    </div>
+  </div>
+  <div class="searchbar" id="searchbar">
+    <div class="searchbox"><span class="ic">🔍</span>
+      <input id="sq" placeholder="搜索动物 · 狮子、火烈鸟、角马" value=""></div>
+  </div>
+  <div class="sec">
+    <div class="sec-h"><h2>📖 行程章节<span class="cnt">4 个生态区</span></h2></div>
+    
+      <div class="region-card" onclick="go(&#39;region&#39;,&#39;amboseli&#39;)">
+        <div class="imgwrap"><img src="./index_files/Kilimanjaro_from_Amboseli.jpg" referrerpolicy="no-referrer"></div>
+        <div class="ov"></div>
+        <div class="meta"><div class="rn serif">安博塞利</div></div>
+        <div class="arrow">›</div>
+      </div>
+      <div class="region-card" onclick="go(&#39;region&#39;,&#39;naivasha&#39;)">
+        <div class="imgwrap"><img src="./index_files/1280px-Naivasha_lake.jpg" referrerpolicy="no-referrer"></div>
+        <div class="ov"></div>
+        <div class="meta"><div class="rn serif">奈瓦沙湖</div></div>
+        <div class="arrow">›</div>
+      </div>
+      <div class="region-card" onclick="go(&#39;region&#39;,&#39;nakuru&#39;)">
+        <div class="imgwrap"><img src="./index_files/Lake-Nakuru-Baboon-Hill-View.JPG" referrerpolicy="no-referrer"></div>
+        <div class="ov"></div>
+        <div class="meta"><div class="rn serif">纳库鲁湖</div></div>
+        <div class="arrow">›</div>
+      </div>
+      <div class="region-card" onclick="go(&#39;region&#39;,&#39;mara&#39;)">
+        <div class="imgwrap"><img src="./index_files/Masai_Mara_at_Sunset.jpg" referrerpolicy="no-referrer"></div>
+        <div class="ov"></div>
+        <div class="meta"><div class="rn serif">马赛马拉</div></div>
+        <div class="arrow">›</div>
+      </div>
+  </div>
+  <div class="sec">
+    <div class="sec-h"><h2>🐾 动物图鉴<span class="cnt">12 种</span></h2></div>
+    <div class="filters">
+      <div class="chip on" onclick="setRF(&#39;all&#39;)">全程区域</div>
+      <div class="chip " onclick="setRF(&#39;amboseli&#39;)">安博塞利</div><div class="chip " onclick="setRF(&#39;naivasha&#39;)">奈瓦沙湖</div><div class="chip " onclick="setRF(&#39;nakuru&#39;)">纳库鲁湖</div><div class="chip " onclick="setRF(&#39;mara&#39;)">马赛马拉</div>
+    </div>
+    <div class="filters">
+      <div class="chip on" onclick="setCF(&#39;all&#39;)">全部类别</div>
+      <div class="chip " onclick="setCF(&#39;象科&#39;)">象科</div><div class="chip " onclick="setCF(&#39;猫科&#39;)">猫科</div><div class="chip " onclick="setCF(&#39;长颈鹿科&#39;)">长颈鹿科</div><div class="chip " onclick="setCF(&#39;马科&#39;)">马科</div><div class="chip " onclick="setCF(&#39;牛科&#39;)">牛科</div><div class="chip " onclick="setCF(&#39;犀科&#39;)">犀科</div><div class="chip " onclick="setCF(&#39;红鹳科&#39;)">红鹳科</div><div class="chip " onclick="setCF(&#39;河马科&#39;)">河马科</div>
+    </div>
+    <div class="grid">
+      <div class="acard" onclick="go(&#39;animal&#39;,&#39;elephant&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg" referrerpolicy="no-referrer">
+      <div class="star">⭐ 明星</div>
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;elephant&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">非洲草原象</div><div class="ne">African Bush Elephant</div>
+      <div class="row"><span class="cat">🐘 象科</span>
+        <span class="iucn EN">EN 濒危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;lion&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg" referrerpolicy="no-referrer">
+      <div class="star">⭐ 明星</div>
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;lion&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">狮子</div><div class="ne">Lion</div>
+      <div class="row"><span class="cat">🦁 猫科</span>
+        <span class="iucn VU">VU 易危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;cheetah&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/Male_cheetah_facing_left_in_South_Africa.jpg" referrerpolicy="no-referrer">
+      <div class="star">⭐ 明星</div>
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;cheetah&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">猎豹</div><div class="ne">Cheetah</div>
+      <div class="row"><span class="cat">🐆 猫科</span>
+        <span class="iucn VU">VU 易危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;leopard&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/African_leopard_male_(cropped).jpg" referrerpolicy="no-referrer">
+      <div class="star">⭐ 明星</div>
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;leopard&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">豹</div><div class="ne">Leopard</div>
+      <div class="row"><span class="cat">🐆 猫科</span>
+        <span class="iucn VU">VU 易危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;giraffe&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/GiraffaCamelopardalisTippelskirchi-Masaai-Mara.JPG" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;giraffe&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">马赛长颈鹿</div><div class="ne">Masai Giraffe</div>
+      <div class="row"><span class="cat">🦒 长颈鹿科</span>
+        <span class="iucn EN">EN 濒危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;zebra&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/Equus_quagga_burchellii_-_Etosha,_2014.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;zebra&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">平原斑马</div><div class="ne">Plains Zebra</div>
+      <div class="row"><span class="cat">🦓 马科</span>
+        <span class="iucn NT">NT 近危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;wildebeest&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/Blue_Wildebeest,_Ngorongoro.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;wildebeest&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">角马</div><div class="ne">Blue Wildebeest</div>
+      <div class="row"><span class="cat">🐂 牛科</span>
+        <span class="iucn LC">LC 无危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;blackrhino&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/Black_Rhino_at_Working_with_Wildlife.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;blackrhino&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">黑犀</div><div class="ne">Black Rhinoceros</div>
+      <div class="row"><span class="cat">🦏 犀科</span>
+        <span class="iucn CR">CR 极危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;whiterhino&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;whiterhino&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">白犀</div><div class="ne">White Rhinoceros</div>
+      <div class="row"><span class="cat">🦏 犀科</span>
+        <span class="iucn NT">NT 近危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;buffalo&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/African_buffalo_(Syncerus_caffer_caffer)_male_with_cattle_egret.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;buffalo&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">非洲水牛</div><div class="ne">African Buffalo</div>
+      <div class="row"><span class="cat">🐃 牛科</span>
+        <span class="iucn NT">NT 近危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;flamingo&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;flamingo&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">火烈鸟</div><div class="ne">Flamingo</div>
+      <div class="row"><span class="cat">🦩 红鹳科</span>
+        <span class="iucn LC">LC 无危</span></div>
+    </div></div><div class="acard" onclick="go(&#39;animal&#39;,&#39;hippo&#39;)">
+    <div class="ph imgwrap"><img src="./index_files/Portrait_Hippopotamus_in_the_water.jpg" referrerpolicy="no-referrer">
+      
+      <div class="fav" onclick="event.stopPropagation();toggleFav(&#39;hippo&#39;)">🤍</div>
+    </div>
+    <div class="body">
+      <div class="nz">河马</div><div class="ne">Hippopotamus</div>
+      <div class="row"><span class="cat">🦛 河马科</span>
+        <span class="iucn VU">VU 易危</span></div>
+    </div></div>
+    </div>
+  </div></div>
+  <nav class="tabbar" id="tabbar">
+    <div class="tab on" onclick="setTab(&#39;home&#39;)"><span class="ti">🏠</span>首页</div>
+    <div class="tab " onclick="setTab(&#39;stars&#39;)"><span class="ti">⭐</span>明星动物</div>
+    <div class="tab " onclick="setTab(&#39;journal&#39;)"><span class="ti">📖</span>我的手账</div>
+    <div class="fab"><div class="btn" onclick="go(&#39;new&#39;)">＋</div><div class="lbl">发布</div></div></nav>
+  <div class="sheet-mask" id="sheetMask" onclick="closeSheet(event)">
+    <div class="sheet" id="sheet" onclick="event.stopPropagation()"></div>
+  </div>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -228,13 +410,14 @@ const IMG = {
   whiterhino:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
   buffalo:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/960px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
   flamingo:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
-  flamingo2:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flock_of_Lesser_Flamingo_along_with_juvenile_near_Jamnagar_railway_stationDSCN1798_1.jpg/960px-Flock_of_Lesser_Flamingo_along_with_juvenile_near_Jamnagar_railway_stationDSCN1798_1.jpg",
   hippo:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg",
   mara:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Masai_Mara_at_Sunset.jpg/1280px-Masai_Mara_at_Sunset.jpg",
   amboseli:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kilimanjaro_from_Amboseli.jpg/1280px-Kilimanjaro_from_Amboseli.jpg",
   naivasha:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Naivasha_lake.jpg/1280px-Naivasha_lake.jpg",
   nakuru:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Lake-Nakuru-Baboon-Hill-View.JPG/1280px-Lake-Nakuru-Baboon-Hill-View.JPG",
 };
+const PF_ICON={xhs:"书",fb:"f",yt:"▶",ig:"◎",wiki:"W"};
+const PF_NAME={xhs:"小红书",fb:"Facebook",yt:"YouTube",ig:"Instagram",wiki:"百科/资料"};
 
 const REGIONS = [
   {id:"amboseli",nameZh:"安博塞利",nameEn:"Amboseli National Park",day:"Day 1–2",img:IMG.amboseli,
@@ -257,9 +440,9 @@ const ANIMALS = [
     habit:"群居，由雌性和幼象组成家族群，通常由最年长的雌象（象妈妈）带领",diet:"草食性，以草、树叶、树皮、嫩枝、果实为食",active:"晨昏活动频繁，白天休息，夜间取食",
     regions:["amboseli","mara"],
     stars:[
-      {name:"Echo（回声）",desc:"安博塞利象群研究第一主角，被 Cynthia Moss 研究 30 余年，2009 年旱季去世。",img:IMG.elephant},
-      {name:"Craig（克雷格）",desc:"非洲仅存约 25 头「超级长牙象」之一，单根象牙超 45kg，2026 年 1 月自然死亡，享年 54 岁。",img:IMG.elephant},
-      {name:"Tim（帝姆）",desc:"安博塞利的传奇大长牙象，带领家族穿越干旱与洪水，见证草原变迁。",img:IMG.elephant},
+      {name:"Echo（回声）",desc:"安博塞利象群研究第一主角，被 Cynthia Moss 研究 30 余年，2009 年旱季去世。",img:IMG.elephant,starId:"echo"},
+      {name:"Craig（克雷格）",desc:"非洲仅存约 25 头「超级长牙象」之一，单根象牙超 45kg，2026 年 1 月自然死亡，享年 54 岁。",img:IMG.elephant,starId:"craig"},
+      {name:"Tim（帝姆）",desc:"安博塞利的传奇大长牙象，被誉为肯尼亚「国宝」，2020 年自然死亡，享年 50 岁。",img:IMG.elephant,starId:"tim"},
     ],
     facts:["大象是唯一不会跳跃的哺乳动物","它们可以通过脚底感知远方的雷声","象群会哀悼逝去的同伴，表现出悲伤行为","成年象每天需要摄入 150–300 公斤食物"],
     posts:[
@@ -271,7 +454,12 @@ const ANIMALS = [
     intro:"狮子是非洲五霸之首，群居性最强的猫科动物。雄狮以浓密的鬃毛著称，狮群由数只母狮、幼狮和雄狮组成，全球野生数量约 2 万头。",
     habit:"群居，由母狮负责捕猎，雄狮守卫领地",diet:"肉食性，捕食角马、斑马、水牛等，也常食腐",active:"夜间和清晨捕猎，白天大部分时间休息",
     regions:["mara"],
-    stars:[{name:"Scarface（刀疤）",desc:"因右眼疤痕得名，「马拉三兄弟」传奇首领，被誉为「世界上最有名的狮子」，2021 年自然死亡。",img:IMG.lion}],
+    stars:[
+      {name:"Scarface（刀疤）",desc:"因右眼疤痕得名，「马拉三兄弟」传奇首领，被誉为「世界上最有名的狮子」，2021 年自然死亡。",img:IMG.lion,starId:"scarface"},
+      {name:"Notch（诺奇）",desc:"独自带大五个儿子的传奇雄狮，「诺奇联盟」是 2008–2017 非洲最著名的狮子联盟。",img:IMG.lion,starId:"notch"},
+      {name:"Morani（老国王）",desc:"马拉「Rongai 群」领袖，被誉为现存最年长的雄狮之一，年逾十五仍坐镇庞大族群。",img:IMG.lion,starId:"morani"},
+      {name:"Lipstick（口红）",desc:"与兄弟 Blackie 一同守护沼泽狮群的「绅士狮」，黑鬃温柔，是众多摄影爱好者的心头好。",img:IMG.lion,starId:"lipstick"},
+    ],
     facts:["雄狮的吼声可传 8 公里远","狮子一天可睡 18–20 小时","狮群捕猎主要由母狮协作完成","幼狮出生时带有斑点，长大后消退"],
     posts:[
       {pf:"yt",t:"Meet King Scarface | World's Most Famous Lion",u:"https://www.youtube.com/watch?v=a3DFmZWxFu8"},
@@ -283,8 +471,9 @@ const ANIMALS = [
     habit:"母豹独居育幼，雄豹常结成联盟；白天活动",diet:"肉食性，主要捕食瞪羚等中小型羚羊",active:"白天狩猎，避开狮鬣狗活跃的夜间",
     regions:["mara"],
     stars:[
-      {name:"Imani（信仰）",desc:"马拉草原优雅的母猎豹，以勇敢护崽闻名，曾被记录为保护幼崽而驱赶狮子。",img:IMG.cheetah},
-      {name:"Tano Bora（五兄弟）",desc:"马拉极罕见的五雄猎豹联盟，能合力扳倒角马等大型猎物。",img:IMG.cheetah},
+      {name:"Imani（信仰）",desc:"马拉草原优雅的母猎豹，以勇敢护崽闻名，曾被记录为保护幼崽而驱赶狮子。",img:IMG.cheetah,starId:"imani"},
+      {name:"Malaika（天使）",desc:"马拉最有名的母猎豹，因常跳上游客越野车顶眺望而闻名，曾出演 BBC《The Hunt》。",img:IMG.cheetah,starId:"malaika"},
+      {name:"Tano Bora（五兄弟）",desc:"马拉极罕见的五雄猎豹联盟，能合力扳倒角马等大型猎物。",img:IMG.cheetah,starId:"tanobora"},
     ],
     facts:["猎豹从静止加速到 100km/h 仅需约 3 秒","它们无法收回利爪，像跑鞋钉一样抓地","猎豹靠尾巴在急转弯中保持平衡","它们不会吼叫，只会发出鸟叫般的啾啾声"],
     posts:[
@@ -296,8 +485,8 @@ const ANIMALS = [
     habit:"独居，领地意识强，善爬树",diet:"肉食性，猎物范围极广，从羚羊到鸟类",active:"夜行为主，白天常卧于树枝",
     regions:["mara"],
     stars:[
-      {name:"Bahati",desc:"Big Cat Diary / Big Cat Tales 系列明星母豹，Bella→Olive→Bahati 三代谱系中的一员。",img:IMG.leopard},
-      {name:"Olive",desc:"Bahati 之母，著名母豹，12 岁时被母狮咬伤头部去世。",img:IMG.leopard},
+      {name:"Bahati",desc:"Big Cat Diary / Big Cat Tales 系列明星母豹，Bella→Olive→Bahati 三代谱系中的一员。",img:IMG.leopard,starId:"bahati"},
+      {name:"Olive",desc:"Bahati 之母，著名母豹，12 岁时被母狮咬伤头部去世。",img:IMG.leopard,starId:"olive"},
     ],
     facts:["豹能把超过自身体重的猎物拖上树","每只豹的玫瑰状斑纹都独一无二","它们能在完全黑暗中精准捕猎","豹是攀爬高手，也能游泳"],
     posts:[
@@ -331,7 +520,8 @@ const ANIMALS = [
   {id:"whiterhino",nameZh:"白犀",nameEn:"White Rhinoceros",latin:"Ceratotherium simum",cat:"犀科",catIcon:"🦏",iucn:"NT",iucnTxt:"近危",star:false,img:IMG.whiterhino,
     intro:"白犀是体型仅次于象的陆生动物，宽平的上唇适合啃食草地。性情相对温和，常成小群活动，是纳库鲁「黑白犀同园可见」的另一主角。",
     habit:"半群居，较温和",diet:"以草为食（食草型），宽唇贴地啃食",active:"昼夜均觅食，泥浴防晒驱虫",
-    regions:["nakuru"],stars:[],
+    regions:["nakuru"],stars:[
+      {name:"Sudan（苏丹）",desc:"地球上最后一头雄性北方白犀，由武装护卫 24 小时守护，2018 年离世，成为全球物种灭绝危机最沉痛的象征。",img:IMG.whiterhino,starId:"sudan"}],
     facts:["「白犀」之名源于宽唇 wide 的误译，并非颜色","白犀是体型第二大的陆生动物","宽平上唇适合贴地啃食短草","它们常和椋鸟共生，帮助清除寄生虫"],
     posts:[]},
   {id:"buffalo",nameZh:"非洲水牛",nameEn:"African Buffalo",latin:"Syncerus caffer",cat:"牛科",catIcon:"🐃",iucn:"NT",iucnTxt:"近危",star:false,img:IMG.buffalo,
@@ -354,26 +544,79 @@ const ANIMALS = [
     posts:[{pf:"wiki",t:"Hippopotamus, Lake Naivasha — GRID-Arendal",u:"https://www.grida.no/resources/2513"}]},
 ];
 
-const STARS_TL = [
-  {yr:"2012–至今",name:"Imani",alive:true,species:"猎豹",alias:"信仰",region:"马赛马拉",img:IMG.cheetah,
-    desc:"Imani 意为「信仰」。这位优雅的母猎豹以勇敢护崽闻名，曾为保护幼崽驱赶狮子，是马拉草原最受喜爱的猎豹之一。",animalId:"cheetah",
-    post:"https://www.youtube.com/watch?v=_P1j3SwKOho"},
-  {yr:"约1972–2026",name:"Craig",alive:false,species:"大象",alias:"克雷格",region:"安博塞利",img:IMG.elephant,
-    desc:"安博塞利的超级长牙象，非洲仅存约 25 头超级长牙象之一，单根象牙超 45kg，2026 年 1 月自然离世，享年 54 岁。",animalId:"elephant",
-    post:"https://www.bbc.com/news/articles/c8e5k7p5222o"},
-  {yr:"2007–2021",name:"Scarface",alive:false,species:"狮子",alias:"刀疤",region:"马赛马拉",img:IMG.lion,
-    desc:"因右眼疤痕得名，是马拉三兄弟的传奇领袖。带领族群多年，捍卫领地，被誉为世界上最有名的狮子。",animalId:"lion",
-    post:"https://www.theguardian.com/world/2021/jun/17/death-of-scarface-lion-by-natural-causes-in-kenya-is-marked-by-conservationists"},
-  {yr:"1973–2009",name:"Echo",alive:false,species:"大象",alias:"回声",region:"安博塞利",img:IMG.elephant,
-    desc:"被 Cynthia Moss 研究 30 余年的安博塞利象群母系首领，是陆生哺乳动物最长研究项目的第一主角，2009 年旱季离世。",animalId:"elephant",
-    post:"https://en.wikipedia.org/wiki/Echo_(elephant)"},
-  {yr:"约2003–2015",name:"Olive / Bahati",alive:false,species:"豹",alias:"母豹谱系",region:"马赛马拉",img:IMG.leopard,
-    desc:"Bella→Olive→Bahati 三代母豹谱系，是 BBC Big Cat Diary 系列的明星，改变了人们对豹行为的理解。",animalId:"leopard",
-    post:"https://www.youtube.com/watch?v=Ap2w7lsqPds"},
-];
+/* 明星个体库（含多社区链接） */
+const STAR_DB = {
+  imani:{name:"Imani",alias:"信仰",species:"猎豹",region:"马赛马拉",alive:true,yr:"2012–至今",animalId:"cheetah",img:IMG.cheetah,
+    desc:"Imani 意为「信仰」。这位优雅的母猎豹以勇敢护崽闻名，曾为保护幼崽驱赶狮子，是马拉草原最受喜爱的猎豹之一。",
+    posts:[{pf:"yt",t:"Cheetah with four newborn cubs! #Imani",u:"https://www.youtube.com/watch?v=_P1j3SwKOho"},
+      {pf:"wiki",t:"Tano Bora & Imani 护崽记录 — Essenia Safaris",u:"https://www.esseniasafaris.com/the-tano-bora-masai-maras-fascinating-coalition-of-five-cheetahs/"}]},
+  malaika:{name:"Malaika",alias:"天使",species:"猎豹",region:"马赛马拉",alive:true,yr:"约2008–至今",animalId:"cheetah",img:IMG.cheetah,
+    desc:"Malaika 在斯瓦希里语意为「天使」，是马拉最有名的母猎豹，因常跳上游客越野车顶眺望而闻名，曾出演 BBC 纪录片《The Hunt》。",
+    posts:[{pf:"yt",t:"Cheetah jumps into a Safari Vehicle — Masai Mara",u:"https://www.youtube.com/watch?v=gw-MWnpqAoE"},
+      {pf:"ig",t:"Throwback to the Queen of the Mara — Malaika",u:"https://www.instagram.com/p/CouwIRTrxpN"},
+      {pf:"fb",t:"Malaika, Masai Mara's most famous cheetah",u:"https://www.facebook.com/YS.Wildlife.Photography/posts/1853098784938037"},
+      {pf:"wiki",t:"Malaika, Queen of the Mara — Denise Ippolito",u:"https://www.deniseippolito.com/blog/malaika-queen-of-the-mara"}]},
+  tanobora:{name:"Tano Bora",alias:"五兄弟 / Fast Five",species:"猎豹",region:"马赛马拉",alive:true,yr:"2016–至今",animalId:"cheetah",img:IMG.cheetah,
+    desc:"Tano Bora（斯语「了不起的五个」）是马拉极罕见的五雄猎豹联盟，能合力扳倒角马等大型猎物，颠覆了人们对猎豹独居的认知。",
+    posts:[{pf:"wiki",t:"The Tano Bora — Five Cheetahs of Masai Mara",u:"https://www.esseniasafaris.com/the-tano-bora-masai-maras-fascinating-coalition-of-five-cheetahs/"},
+      {pf:"wiki",t:"The Masai Mara Cheetahs — The Next Crossing",u:"https://thenextcrossing.com/masai-mara-cheetahs"}]},
+  scarface:{name:"Scarface",alias:"刀疤",species:"狮子",region:"马赛马拉",alive:false,yr:"2007–2021",animalId:"lion",img:IMG.lion,
+    desc:"因右眼疤痕得名，是「马拉三兄弟」的传奇领袖，带领族群多年捍卫领地，被誉为「世界上最有名的狮子」，2021 年自然死亡，享年约 14 岁。",
+    posts:[{pf:"yt",t:"Meet King Scarface | World's Most Famous Lion",u:"https://www.youtube.com/watch?v=a3DFmZWxFu8"},
+      {pf:"yt",t:"The Legendary Lion of Maasai Mara — King Scarface",u:"https://www.youtube.com/watch?v=kUj2jOVHE0Y"},
+      {pf:"ig",t:"Scarface, the legendary male lion of Masai Mara",u:"https://www.instagram.com/reel/DR6jBsck2t6"},
+      {pf:"fb",t:"Conservationists mourn Scarface — The Guardian",u:"https://www.theguardian.com/world/2021/jun/17/death-of-scarface-lion-by-natural-causes-in-kenya-is-marked-by-conservationists"},
+      {pf:"wiki",t:"Long Live the King — Angama Mara",u:"https://angama.com/blog-posts/stories-from-the-mara/long-live-the-king"}]},
+  notch:{name:"Notch",alias:"诺奇",species:"狮子",region:"马赛马拉",alive:false,yr:"约2003–2013",animalId:"lion",img:IMG.lion,
+    desc:"失去族群与配偶后，Notch 做了雄狮极罕见的事——独自带大五个儿子。「诺奇联盟」（Notch 与五子）是 2008–2017 年非洲最著名的狮子联盟。",
+    posts:[{pf:"yt",t:"Rise & Fall of the Famous Notch Coalition",u:"https://www.youtube.com/watch?v=PpMJPSW5VvM"},
+      {pf:"fb",t:"Notch — what a survivor (Jonathan & Angela Scott)",u:"https://www.facebook.com/JonathanAngelaScott/posts/1492943052202817"},
+      {pf:"ig",t:"The infamous male lion known as Notch",u:"https://www.instagram.com/p/DRzjk7sD1Jx"},
+      {pf:"wiki",t:"The Legendary Notch & His Five Sons — Otu Safaris",u:"https://www.otusafaris.com/reign-of-the-notches"}]},
+  echo:{name:"Echo",alias:"回声",species:"大象",region:"安博塞利",alive:false,yr:"1973–2009",animalId:"elephant",img:IMG.elephant,
+    desc:"被 Cynthia Moss 研究 30 余年的安博塞利象群母系首领，是陆生哺乳动物最长研究项目的第一主角，研究极大丰富了人类对大象智慧与情感的理解，2009 年旱季离世。",
+    posts:[{pf:"wiki",t:"Echo (elephant) — Wikipedia",u:"https://en.wikipedia.org/wiki/Echo_(elephant)"},
+      {pf:"yt",t:"Echo: An Elephant to Remember — PBS Nature",u:"https://www.pbs.org/wnet/nature/echo-an-elephant-to-remember-cynthia-moss-echo-and-the-amboseli-elephants/5876"},
+      {pf:"fb",t:"BBC World Service：最长大象研究项目",u:"https://www.facebook.com/bbcworldservice/posts/1353526146801614"}]},
+  craig:{name:"Craig",alias:"克雷格",species:"大象",region:"安博塞利",alive:false,yr:"约1972–2026",animalId:"elephant",img:IMG.elephant,
+    desc:"安博塞利的「超级长牙象」，非洲仅存约 25 头超级长牙象之一，单根象牙超 45kg、长约 2.1 米。性情温和，是全球反盗猎的象征，2026 年 1 月自然离世，享年 54 岁。",
+    posts:[{pf:"wiki",t:"Craig (elephant) — Wikipedia",u:"https://en.wikipedia.org/wiki/Craig_(elephant)"},
+      {pf:"fb",t:"Craig the beer-ambassador elephant dies — BBC",u:"https://www.bbc.com/news/articles/c8e5k7p5222o"},
+      {pf:"wiki",t:"Saving the last Super Tuskers — IFAW",u:"https://www.ifaw.org/journal/saving-last-super-tuskers-most-iconic-elephants-africa"}]},
+  tim:{name:"Tim",alias:"帝姆",species:"大象",region:"安博塞利",alive:false,yr:"约1969–2020",animalId:"elephant",img:IMG.elephant,
+    desc:"安博塞利的传奇大长牙象，被誉为肯尼亚「国宝」。为保护它和农田，KWS 曾为它戴上项圈监测，2020 年 2 月自然离世，享年 50 岁，遗体在内罗毕展出。",
+    posts:[{pf:"fb",t:"Big Tim, one of Kenya's last giant tuskers dies — Al Jazeera",u:"https://www.aljazeera.com/news/2020/2/6/big-tim-one-of-kenyas-last-giant-tusker-elephants-dies-at-50"},
+      {pf:"wiki",t:"Kenya's last big tusker dies aged 50 — BBC",u:"https://www.bbc.com/news/world-africa-51391422"},
+      {pf:"fb",t:"The death of an icon — Amboseli Trust for Elephants",u:"https://www.facebook.com/AmboseliElephants/posts/3019147944770248"}]},
+  bahati:{name:"Bahati",alias:"母豹",species:"豹",region:"马赛马拉",alive:true,yr:"约2010–至今",animalId:"leopard",img:IMG.leopard,
+    desc:"Big Cat Diary / Big Cat Tales 系列明星母豹，是 Bella→Olive→Bahati 三代著名母豹谱系中的一员，曾登上 Netflix《Tales by Light》。",
+    posts:[{pf:"yt",t:"BAHATI — BBC Big Cat Diary Leopard",u:"https://www.youtube.com/watch?v=Ap2w7lsqPds"},
+      {pf:"fb",t:"Bahati 与幼崽（Jonathan & Angela Scott）",u:"https://www.facebook.com/JonathanAngelaScott/posts/786674156163047"},
+      {pf:"fb",t:"The leopard mother named Bahati",u:"https://www.facebook.com/JonathanAngelaScott/posts/1333236724840118"}]},
+  olive:{name:"Olive",alias:"母豹",species:"豹",region:"马赛马拉",alive:false,yr:"约2000–2015",animalId:"leopard",img:IMG.leopard,
+    desc:"Bahati 之母、Bella 之女，著名的马拉母豹，活跃于 Talek 河一带，育有多只幼崽，12 岁时被母狮咬伤头部去世。",
+    posts:[{pf:"fb",t:"Olive 与 Bahati 谱系（Jonathan & Angela Scott）",u:"https://www.facebook.com/JonathanAngelaScott/posts/786674156163047"},
+      {pf:"wiki",t:"Big Cats of Kenya's Masai Mara — Wild Cats Magazine",u:"https://wildcatsmagazine.nl/travel-reports/travel-report-big-cats-of-kenyas-masai-mara-march-2009-2"}]},
+  morani:{name:"Morani",alias:"老国王",species:"狮子",region:"马赛马拉",alive:true,yr:"约2010–至今",animalId:"lion",img:IMG.lion,
+    desc:"Morani（马赛语「战士」）是马拉「Rongai 群」的领袖，被誉为马拉现存最年长的雄狮之一。年逾十五仍坐镇庞大族群，是摄影师镜头下饱经风霜的草原老国王。",
+    posts:[{pf:"ig",t:"Morani, the oldest known lion in the Mara — Rongai Pride",u:"https://www.instagram.com/reel/DPL4lc9khrj"},
+      {pf:"fb",t:"Meeting Morani — Wildlife & Landscape Photography",u:"https://www.facebook.com/groups/wildlifeandlandscapephotography/posts/3249656908585762"},
+      {pf:"fb",t:"\"Morani\" — Harry Collins Photography",u:"https://www.facebook.com/harrycollinsphotography/posts/1213816406779778"}]},
+  lipstick:{name:"Lipstick",alias:"口红",species:"狮子",region:"马赛马拉",alive:false,yr:"约2009–2020",animalId:"lion",img:IMG.lion,
+    desc:"Lipstick 与兄弟 Blackie 是马拉沼泽一带著名的雄狮兄弟，黑色鬃毛、神情温柔，长期守护各自的狮群与幼崽，是众多摄影爱好者心中的「绅士狮」。",
+    posts:[{pf:"wiki",t:"Lipstick — My tribute to this majestic lion — Lisa M Roberti",u:"https://lisamroberti.com/lipstick-my-tribute-to-this-majestic-lion-masai-mara-kenya"},
+      {pf:"ig",t:"Blackie — the brother with a puppy-face expression",u:"https://www.instagram.com/p/CBc02DRh6BO"},
+      {pf:"wiki",t:"The Marsh Pride of Lions — Governors' Camp",u:"https://governorscamp.com/about/the-marsh-pride-of-lions"}]},
+  sudan:{name:"Sudan",alias:"苏丹",species:"北方白犀",region:"奥佩杰塔（肯尼亚）",alive:false,yr:"约1973–2018",animalId:"whiterhino",img:IMG.whiterhino,
+    desc:"Sudan 是地球上最后一头雄性北方白犀。2009 年从捷克动物园空运回肯尼亚，由武装护卫 24 小时守护，2018 年 3 月因年老离世，他的死成为全球物种灭绝危机最沉痛的象征。",
+    posts:[{pf:"wiki",t:"World's Last Male Northern White Rhino — TIME",u:"https://time.com/5209390/sudan-rhino-rhinoceros-northern-white"},
+      {pf:"wiki",t:"Ceremony in Kenya Honors Sudan — National Geographic",u:"https://www.nationalgeographic.com/animals/article/sudan-last-male-northern-white-rhino-extinct-spd"},
+      {pf:"fb",t:"Joseph Wachira comforts Sudan — Wildlife Photographer of the Year",u:"https://www.facebook.com/WildlifePhotographerOfTheYear/posts/1284097653073289"},
+      {pf:"ig",t:"Sudan and the End of the Northern White Rhino",u:"https://www.instagram.com/p/DXYTNPZDTXF"}]},
+};
 
-const PF_NAME={xhs:"小红书",fb:"Facebook",yt:"YouTube",ig:"Instagram",wiki:"资料"};
-const PF_ICON={xhs:"书",fb:"f",yt:"▶",ig:"◎",wiki:"W"};
+/* 明星时间线（顺序按年代，由近到远默认） */
+const STARS_TL=["imani","morani","tanobora","malaika","bahati","craig","sudan","tim","scarface","lipstick","notch","echo","olive"];
 
 /* ============ STATE ============ */
 const animalById=id=>ANIMALS.find(a=>a.id===id);
@@ -382,7 +625,7 @@ let journals=JSON.parse(localStorage.getItem('safari_journals')||'null');
 if(!journals){
   journals=[{id:Date.now(),animalId:"lion",regionId:"mara",spot:"马拉河渡口",date:"2026-06-25",time:"17:30",
     note:"傍晚的马拉河渡口，夕阳把整个草原染成了金色。一只雄狮带着几只母狮在河边休息，微风吹过，它的鬃毛轻轻飘动，像草原的王者。",
-    tags:["Sunset","Lion"],photos:[IMG.lion,IMG.cheetah,IMG.mara]}];
+    photos:[IMG.lion,IMG.cheetah,IMG.mara]}];
   saveJournals();
 }
 function saveJournals(){localStorage.setItem('safari_journals',JSON.stringify(journals))}
@@ -391,8 +634,8 @@ function saveFavs(){localStorage.setItem('safari_favs',JSON.stringify(favs))}
 /* ============ ROUTER ============ */
 let state={tab:'home',view:null,id:null,starSort:'near'};
 const root=document.getElementById('root');
-function go(view,id){state.view=view;state.id=id;render();root.scrollTop=0}
-function setTab(t){state.tab=t;state.view=null;state.id=null;render();root.scrollTop=0}
+function go(view,id){closeSheet();state.view=view;state.id=id;render();root.scrollTop=0}
+function setTab(t){closeSheet();state.tab=t;state.view=null;state.id=null;render();root.scrollTop=0}
 
 function render(){
   if(state.view==='region') return renderRegion(state.id);
@@ -404,12 +647,12 @@ function render(){
   renderHome();
 }
 function renderTab(){
-  const T=[['home','🏠','首页'],['stars','⭐','明星动物'],['fab'],['journal','📖','我的手账']];
-  document.getElementById('tabbar').innerHTML=T.map(t=>{
-    if(t[0]==='fab') return `<div class="fab"><div class="btn" onclick="go('new')">＋</div></div>`;
-    const on=state.tab===t[0]&&!state.view?'on':'';
-    return `<div class="tab ${on}" onclick="setTab('${t[0]}')"><span class="ti">${t[1]}</span>${t[2]}</div>`;
-  }).join('');
+  const on=k=>state.tab===k&&!state.view?'on':'';
+  document.getElementById('tabbar').innerHTML=`
+    <div class="tab ${on('home')}" onclick="setTab('home')"><span class="ti">🏠</span>首页</div>
+    <div class="tab ${on('stars')}" onclick="setTab('stars')"><span class="ti">⭐</span>明星动物</div>
+    <div class="tab ${on('journal')}" onclick="setTab('journal')"><span class="ti">📖</span>我的手账</div>
+    <div class="fab"><div class="btn" onclick="go('new')">＋</div><div class="lbl">发布</div></div>`;
 }
 
 /* ============ HOME ============ */
@@ -427,12 +670,12 @@ function renderHome(){
     <div class="hero-txt">
       <div class="loc">📍 KENYA · 2026.06.21–06.27</div>
       <div class="hero-title serif">My Kenya<br>Safari Field Book</div>
-      <div class="hero-sub">我的非洲动物图鉴 + 旅行手账</div>
+      <div class="hero-sub">我的非洲动物图鉴 · 旅行手账</div>
     </div>
   </div>
-  <div class="searchbox">
-    <span class="ic">🔍</span>
-    <input id="sq" placeholder="搜索动物 · 狮子、火烈鸟、角马" value="${searchQ}">
+  <div class="searchbar" id="searchbar">
+    <div class="searchbox"><span class="ic">🔍</span>
+      <input id="sq" placeholder="搜索动物 · 狮子、火烈鸟、角马" value="${searchQ}"></div>
   </div>
   <div class="sec">
     <div class="sec-h"><h2>📖 行程章节<span class="cnt">4 个生态区</span></h2></div>
@@ -440,7 +683,7 @@ function renderHome(){
       <div class="region-card" onclick="go('region','${r.id}')">
         <div class="imgwrap"><img src="${r.img}" referrerpolicy="no-referrer"></div>
         <div class="ov"></div>
-        <div class="meta"><div class="rn serif">${r.nameZh}</div><div class="rd">${r.day}</div></div>
+        <div class="meta"><div class="rn serif">${r.nameZh}</div></div>
         <div class="arrow">›</div>
       </div>`).join('')}
   </div>
@@ -461,6 +704,8 @@ function renderHome(){
   renderTab();
   const sq=document.getElementById('sq');
   sq.oninput=e=>{searchQ=e.target.value;const pos=e.target.selectionStart;renderHome();const n=document.getElementById('sq');n.focus();n.setSelectionRange(pos,pos)};
+  // sticky shadow on scroll
+  root.onscroll=()=>{const b=document.getElementById('searchbar');if(b)b.classList.toggle('solid',root.scrollTop>260)};
 }
 function animalCard(a){
   const f=favs.includes(a.id);
@@ -488,8 +733,7 @@ function renderRegion(id){
   <div class="dhero">
     <div class="imgwrap"><img src="${r.img}" referrerpolicy="no-referrer"></div>
     <div class="ov"></div>
-    <div class="names"><div style="background:var(--orange);display:inline-block;padding:5px 12px;border-radius:10px;font-size:13px;font-weight:600;margin-bottom:8px">${r.day}</div>
-      <div class="nz serif">${r.nameZh}</div><div class="ne serif">${r.nameEn}</div></div>
+    <div class="names"><div class="nz serif">${r.nameZh}</div><div class="ne serif">${r.nameEn}</div></div>
   </div>
   <div class="dbody">
     <p class="intro">${r.intro}</p>
@@ -510,7 +754,7 @@ function renderAnimal(id){
   const a=animalById(id);
   const regs=a.regions.map(rid=>REGIONS.find(r=>r.id===rid)).filter(Boolean);
   root.innerHTML=`
-  <div class="back" onclick="history.length>1?back():setTab('home')">‹</div>
+  <div class="back" onclick="setTab('home')">‹</div>
   <div class="dhero">
     <div class="imgwrap"><img src="${a.img}" referrerpolicy="no-referrer"></div>
     <div class="ov"></div>
@@ -531,30 +775,52 @@ function renderAnimal(id){
       <div class="pill-row">${regs.map(r=>`<span class="pill" onclick="go('region','${r.id}')">${r.nameZh} · ${r.day}</span>`).join('')}</div>
     </div>
     ${a.stars.length?`<div class="panel"><h3>⭐ 有名的它们</h3>
-      ${a.stars.map(s=>`<div class="star-item"><div class="si imgwrap"><img src="${s.img}" referrerpolicy="no-referrer"></div>
-        <div class="sc"><div class="sn">${s.name}</div><div class="sd">${s.desc}</div></div></div>`).join('')}</div>`:''}
+      ${a.stars.map(s=>`<div class="star-item" onclick="openStar('${s.starId}')"><div class="si imgwrap"><img src="${s.img}" referrerpolicy="no-referrer"></div>
+        <div class="sc"><div class="sn">${s.name}</div><div class="sd">${s.desc}</div></div><div class="sa">›</div></div>`).join('')}</div>`:''}
     <div class="panel"><h3>💡 冷知识 / 趣事</h3>${a.facts.map(f=>`<div class="fact">${f}</div>`).join('')}</div>
     ${a.posts.length?`<div class="panel"><h3>💬 大家怎么说</h3>
-      ${a.posts.map(p=>`<a class="post" href="${p.u}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
-        <div class="pf ${p.pf}">${PF_ICON[p.pf]}</div><div class="pt">${p.t}</div><div class="pa">›</div></a>`).join('')}</div>`:''}
+      ${a.posts.map(p=>postRow(p)).join('')}</div>`:''}
     <button class="cta" onclick="newFor('${a.id}')">✏️ 记录我看到的这只${a.nameZh}</button>
   </div>`;
   renderTab();
 }
-function back(){history.back?location.hash='':null;state.view='animal';}
+function postRow(p){
+  return `<a class="post" href="${p.u}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+    <div class="pf ${p.pf}">${PF_ICON[p.pf]}</div>
+    <div style="flex:1"><div class="pt">${p.t}</div><div class="psrc">${PF_NAME[p.pf]}</div></div>
+    <div class="pa">›</div></a>`;
+}
+
+/* ============ STAR POSTS SHEET (二级) ============ */
+function openStar(starId){
+  const s=STAR_DB[starId];if(!s)return;
+  document.getElementById('sheet').innerHTML=`
+    <div class="sheet-grab"></div>
+    <div class="sheet-h">
+      <div class="sh-img imgwrap"><img src="${s.img}" referrerpolicy="no-referrer"></div>
+      <div><div class="sh-t">${s.name}<span class="badge ${s.alive?'alive':'dead'}">${s.alive?'在世':'已故'}</span></div>
+        <div class="sh-s">${s.species} · 昵称：${s.alias} · 📍${s.region} · ${s.yr}</div></div>
+    </div>
+    <div style="padding:14px 20px 4px;font-size:13.5px;line-height:1.65;color:var(--ink)">${s.desc}</div>
+    <div style="padding:10px 20px 4px;font-size:13px;font-weight:700;color:var(--ink2)">💬 相关社区帖 / 资料（${s.posts.length}）</div>
+    <div class="sheet-list">${s.posts.map(p=>postRow(p)).join('')}</div>
+    ${s.alive?`<div style="padding:6px 20px"><button class="cta" style="position:static" onclick="closeSheet();newFor('${s.animalId}')">✏️ 记录我看到的它</button></div>`:`<div style="padding:6px 20px 2px;font-size:12.5px;color:var(--ink2);text-align:center">🕊️ 这位明星已离我们而去，愿草原长记得它</div>`}`;
+  document.getElementById('sheetMask').classList.add('show');
+}
+function closeSheet(e){if(e&&e.target!==document.getElementById('sheetMask'))return;document.getElementById('sheetMask').classList.remove('show')}
 
 /* ============ STARS TIMELINE ============ */
 function renderStars(){
-  let list=STARS_TL.slice();
-  if(state.starSort==='far') list=list.slice().reverse();
+  let ids=STARS_TL.slice();
+  if(state.starSort==='far') ids=ids.slice().reverse();
   root.innerHTML=`
-  <div class="page-h"><h1 class="serif">草原明星</h1><p>按年代排列的传奇动物时间线</p></div>
+  <div class="page-h"><h1 class="serif">草原明星</h1><p>按年代排列的传奇动物时间线（${ids.length} 位）</p></div>
   <div class="toggle">
     <span class="${state.starSort==='near'?'on':''}" onclick="state.starSort='near';renderStars()">由近到远</span>
     <span class="${state.starSort==='far'?'on':''}" onclick="state.starSort='far';renderStars()">由远到近</span>
   </div>
   <div class="tl">
-    ${list.map(s=>`
+    ${ids.map(id=>{const s=STAR_DB[id];return `
       <div class="tl-item"><div class="dot"></div>
         <div class="tl-yr">${s.yr}</div>
         <div class="tl-card">
@@ -565,11 +831,11 @@ function renderStars(){
           </div>
           <div class="tl-desc">${s.desc}</div>
           <div class="tl-act">
-            <a href="${s.post}" target="_blank" rel="noopener">💬 社区帖</a>
+            <a onclick="openStar('${id}')">💬 社区帖（${s.posts.length}）</a>
             <a onclick="go('animal','${s.animalId}')">📖 看图鉴</a>
-            <a onclick="newFor('${s.animalId}')">✏️ 记录相遇</a>
+            ${s.alive?`<a onclick="newFor('${s.animalId}')">✏️ 记录相遇</a>`:''}
           </div>
-        </div></div>`).join('')}
+        </div></div>`;}).join('')}
   </div>`;
   renderTab();
 }
@@ -582,7 +848,7 @@ function renderNewForm(){
   const d=formDraft||{};
   const date=d.date||now.toISOString().slice(0,10);
   const time=d.time||now.toTimeString().slice(0,5);
-  d.photos=d.photos||[];d.tags=d.tags||[];
+  d.photos=d.photos||[];
   formDraft=d;d.date=date;d.time=time;d.regionId=d.regionId||'mara';
   root.innerHTML=`
   <div class="form-h"><span class="ft">写一篇观察手账</span><span class="cancel" onclick="formDraft=null;setTab('journal')">取消</span></div>
@@ -605,13 +871,7 @@ function renderNewForm(){
   </div>
   <div class="fld"><label>我想说的话</label>
     <textarea class="txt" id="fNote" maxlength="500" placeholder="当时的画面、心情、声音、气味…" oninput="document.getElementById('cc').textContent=this.value.length">${d.note||''}</textarea>
-    <div class="cnt-r"><span id="cc">0</span>/500</div>
-  </div>
-  <div class="fld"><label>标签</label>
-    <div class="tags-in" id="tagBox">
-      ${d.tags.map((t,i)=>`<span class="tagchip">#${t} <span class="x" onclick="rmTag(${i})">×</span></span>`).join('')}
-      <input type="text" id="tagIn" placeholder="添加标签…" onkeydown="if(event.key==='Enter'){event.preventDefault();addTag()}">
-    </div>
+    <div class="cnt-r"><span id="cc">${(d.note||'').length}</span>/500</div>
   </div>
   <button class="save" onclick="saveJournal()">📖 保存到手账</button>
   <div class="offline">离线保存在本机，无需联网</div>`;
@@ -627,16 +887,15 @@ function syncDraft(){
 }
 function addPhotos(e){
   syncDraft();const files=[...e.target.files];let done=0;
+  if(!files.length)return;
   files.forEach(f=>{const r=new FileReader();r.onload=ev=>{formDraft.photos.push(ev.target.result);if(++done===files.length)renderNewForm()};r.readAsDataURL(f)});
 }
 function rmPhoto(i){syncDraft();formDraft.photos.splice(i,1);renderNewForm()}
-function addTag(){const v=document.getElementById('tagIn').value.trim().replace(/^#/,'');if(v){syncDraft();formDraft.tags.push(v);renderNewForm()}}
-function rmTag(i){syncDraft();formDraft.tags.splice(i,1);renderNewForm()}
 function saveJournal(){
   syncDraft();
   const j={id:Date.now(),...formDraft};
   journals.unshift(j);saveJournals();formDraft=null;
-  toast('已保存到手账 📖');setTab('journal');
+  toast('✅ 保存成功');setTab('journal');
 }
 
 /* ============ JOURNAL LIST ============ */
@@ -667,14 +926,13 @@ function renderJournal(){
           <span class="ab">${a?a.catIcon+' '+a.nameZh:''}</span></div>
         ${j.photos&&j.photos.length?`<div class="j-photos">${j.photos.map(p=>`<div class="jp imgwrap"><img src="${p}" referrerpolicy="no-referrer"></div>`).join('')}</div>`:''}
         <div class="j-note">${(j.note||'').replace(/</g,'&lt;')}</div>
-        <div class="j-foot"><div class="j-tags">${(j.tags||[]).map(t=>'#'+t).join(' &nbsp;')}</div>
-          <span class="j-del" onclick="delJournal(${j.id})">删除</span></div>
+        <div class="j-foot"><span class="j-del" onclick="delJournal(${j.id})">删除</span></div>
       </div></div>`;
   }).join(''):`<div class="empty"><div class="e1">📖</div><div class="e2">还没有手账<br>点底部 ＋ 记录你的第一次相遇吧</div></div>`}
   <div style="height:20px"></div>`;
   renderTab();
 }
-function delJournal(id){if(confirm('确定删除这篇手账？')){journals=journals.filter(j=>j.id!==id);saveJournals();renderJournal()}}
+function delJournal(id){if(confirm('确定删除这篇手账？')){journals=journals.filter(j=>j.id!==id);saveJournals();toast('🗑️ 删除成功');renderJournal()}}
 
 /* ============ UTILS ============ */
 let toastT;
@@ -682,5 +940,6 @@ function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t
 
 render();
 </script>
-</body>
-</html>
+
+
+</body></html>
